@@ -5,29 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atique Moin - Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        nav { background: #333; padding: 10px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        .container { padding: 20px; max-width: 800px; margin: auto; }
-        footer { background: #333; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+        .sidebar { width: 300px; background: white; padding: 20px; position: fixed; height: 100%; }
+        .content { margin-left: 320px; padding: 20px; }
+        .profile-pic { width: 100px; border-radius: 50%; }
+        .name { font-size: 22px; font-weight: bold; }
+        .title { font-size: 16px; color: gray; }
+        .links a { display: block; color: black; text-decoration: none; padding: 5px 0; }
+        .links a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-    </nav>
-    
-    <div class="container">
-        <h1>Welcome to Atique Moin's Portfolio</h1>
-        <p>Machine Learning | Biomedical Data Analysis | Neuroscience</p>
-        <p>Explore my work in biomedical engineering, signal processing, and AI-driven solutions.</p>
+    <div class="sidebar">
+        <img src="image.png" alt="Profile Picture" class="profile-pic">
+        <p class="name">Atique Moin</p>
+        <p class="title">PhD in Neuroscience | ML & Biomedical Data Analysis</p>
+        <div class="links">
+            <a href="#">Email</a>
+            <a href="#">Google Scholar</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
     </div>
-    
-    <footer>
-        &copy; 2025 Atique Moin | <a href="mailto:moindu44@gmail.com" style="color: white;">Email</a> | <a href="https://www.linkedin.com/in/moinatique/" style="color: white;">LinkedIn</a>
-    </footer>
+    <div class="content">
+        <h1>Greetings! 👋</h1>
+        <p>I am Atique Moin, a researcher specializing in machine learning and biomedical data analysis. My work focuses on processing neural and physiological signals for medical applications.</p>
+        <h2>Research Interests</h2>
+        <p>Machine Learning | Signal Processing | Neuroscience | Biomedical Engineering</p>
+        <h2>Recent Work</h2>
+        <p>Developed AI-driven models to analyze EEG and neural activity for motion prediction and medical diagnostics.</p>
+    </div>
 </body>
 </html>
