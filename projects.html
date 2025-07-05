@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atique Moin - Research Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    .navbar {
+      background: #222;
+      padding: 12px 0;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: #f4f4f4;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 17px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    .sidebar {
+      width: 280px;
+      background: white;
+      padding: 20px;
+      position: fixed;
+      height: 100%;
+      top: 60px;
+      overflow-y: auto;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+      margin-left: 300px;
+      padding: 30px;
+      margin-top: 90px;
+    }
+
+    .profile-pic {
+      width: 130px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .title {
+      font-size: 15px;
+      color: gray;
+      margin-bottom: 20px;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      color: black;
+      text-decoration: none;
+      padding: 6px 0;
+      font-size: 15px;
+    }
+
+    .links a img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+
+    .project-left {
+      flex: 1;
+      min-width: 250px;
+      padding-right: 20px;
+    }
+
+    .project-right {
+      flex: 1;
+      min-width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .project h2 {
+      font-size: 24px;
+      color: #004aad;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .project ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .caption {
+      font-size: 13px;
+      color: #666;
+      text-align: center;
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    .learn-more {
+      margin-top: 15px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .learn-more:hover {
+      background-color: #0056b3;
+    }
+
+    .hidden-content {
+      display: none;
+      margin-top: 15px;
+    }
+  </style>
+  <script>
+    function toggleContent(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#news">News</a>
+    <a href="projects.html">Research</a>
+    <a href="index.html#publications">Publications</a>
+    <a href="files/Atique_Moin_Resume.pdf" target="_blank">Resume</a>
+  </div>
+
+  <div class="sidebar">
+    <img src="images/MdMoinUddinAtique_Photo.jpg" alt="Profile Picture" class="profile-pic">
+    <p class="name">Atique Moin</p>
+    <p class="title">PhD in Neuroscience | ML & Biomedical Data Analysis</p>
+    <div class="links">
+      <a href="mailto:moindu44@gmail.com"><img src="icons/gmail.png" alt="Email Icon">Email: moindu44@gmail.com</a>
+      <a href="https://scholar.google.com/citations?user=xib6DxkAAAAJ&hl=en" target="_blank"><img src="icons/Scholar.png" alt="Google Scholar Icon">Google Scholar</a>
+      <a href="https://www.linkedin.com/in/moinatique/" target="_blank"><img src="icons/Linkedin.jpg" alt="LinkedIn Icon">LinkedIn</a>
+      <a href="https://github.com/moinatique" target="_blank"><img src="icons/github.png" alt="GitHub Icon">GitHub</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Research Projects</h1>
+
+    <div class="project">
+      <div class="project-left">
+        <h2>🧠 Mirror Neurons: Decoding Force & Reward</h2>
+        <button class="learn-more" onclick="toggleContent('proj1-details')">Learn More</button>
+        <div id="proj1-details" class="hidden-content">
+          <p>
+            Investigated how mirror neurons (MNs) in the sensorimotor cortex (S1, M1, PMd, PMv) encode visually cued grip force and reward expectation in non-human primates during manual and observational tasks. Neural activity was recorded via multi-electrode arrays (UTAH) and analyzed using statistical and ML models.
+          </p>
+          <ul>
+            <li>Identified mirror-like responses to grip force in both active and observed trials (figure d).</li>
+            <li>Decoded force trajectories from neural activity, even during observation.</li>
+            <li>Observed reward-based modulation and co-modulation of grip-force tuning (figure b).</li>
+            <li>Localization of mirror neurons in sensorimotor cortex (figure c)</li>
+          </ul>
+          <p><em>Significance:</em> First evidence that MNs encode abstract effort and value in motor and somatosensory cortex — supporting applications in brain-machine interfaces and motor cognition research.</p>
+        </div>
+      </div>
+      <div class="project-right">
+        <img src="images/mirrorNeuron.png" alt="Mirror Neuron Visualization">
+        <div class="caption">Mirror neuron for Grip force and Reward</div>
+      </div>
+    </div>
+
+    <div class="project">
+      <h2>📟 Chest Sound Classification</h2>
+      <p>Applied signal segmentation, envelope detection, and convolutional neural networks (CNNs) for classifying heart sound recordings into normal, murmur, and artifact classes.</p>
+    </div>
+  </div>
+
+</body>
+</html>
