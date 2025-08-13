@@ -3,12 +3,12 @@
 <div class="project">
   <div class="project-left">
     <h2>🧠 Mirror Neurons: Decoding Force & Reward</h2>
-    <button class="learn-more" onclick="toggleContent('proj1-details')" id="learnMoreBtn">Learn More</button>
+    <button class="learn-more" onclick="toggleContent('proj1-details')">Learn More</button>
     <div id="proj1-details" class="hidden-content" style="display:none; margin-top:10px;">
       <p>
         I worked on detecting mirror neuron activity related to grip force in the sensorimotor cortex. Using single-unit activity recorded from an implanted UTAH array, I identified representative neurons that encoded grip force during both action execution and observation, across varying reward conditions. I further developed models to predict grip force based on the activity of these mirror neurons. Notably, my analysis revealed that 1–4% of these neurons modulated their response based on reward expectation—a critical insight for advancing the design of reward-adaptive brain-computer interfaces (BCIs).
-      <h3> Project Summary: </h3>
       </p>
+      <h3> Project Summary: </h3>
       <ul>
         <li>Identified mirror-like responses to grip force in both active and observed trials (figure d).</li>
         <li>Decoded force trajectories from neural activity, even during observation.</li>
@@ -25,8 +25,15 @@
 </div>
 
 <div class="project">
-  <h2>📟 Chest Sound Classification</h2>
-  <p>Applied signal segmentation, envelope detection, and convolutional neural networks (CNNs) for classifying heart sound recordings into normal, murmur, and artifact classes.</p>
+  <div class="project-left">
+    <h2>📟 Chest Sound Classification</h2>
+    <button class="learn-more" onclick="toggleContent('proj2-details')">Learn More</button>
+    <div id="proj2-details" class="hidden-content" style="display:none; margin-top:10px;">
+      <p>
+        Applied signal segmentation, envelope detection, and convolutional neural networks (CNNs) for classifying heart sound recordings into normal, murmur, and artifact classes.
+      </p>
+    </div>
+  </div>
 </div>
 
 <script>
